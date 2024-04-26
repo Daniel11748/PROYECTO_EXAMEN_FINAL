@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #656565;
+    text-align: left;
+    background-color: #F3F3F3;
+  }
+
+
+  #carousel {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+
+.carousel-control-prev,
+.carousel-control-next{
+position: absolute;
+}
+
+
+.carousel-caption {
+    z-index: 4;
+    text-align: center;
+}
+
+.carousel-item img {
+    filter: brightness(60%);
+}
+
+/* Estilos personalizados para el botón de reserva */
+.reserva-btn {
+    background-color: #7AB730; /* Color de fondo personalizado */
+    border-color: #7AB730; /* Color del borde */
+    border-radius: 0 !important; /* Quita el radio de borde predeterminado */
+}
+
+.reserva-btn:hover {
+    background-color: #5E961B; /* Cambio de color al pasar el ratón */
+    border-color: #5E961B;
+}
+
+#reserva {
+    position: absolute;
+    top: -100px; /* Ajusta la posición vertical según sea necesario */
+    left: 10px; /* Ajusta la posición horizontal según sea necesario */
+}
+
+#reserva .btn-primary {
+    background-color: #7AB730; /* Color de fondo personalizado */
+    border-color: #7AB730; /* Color del borde */
+    border-radius: 0 !important; /* Quita el radio de borde predeterminado */
+    height: 47px; /* Mantener la misma altura que los otros elementos */
+
+}
+
+#reserva .col-md-2 {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Mantener la misma altura que los otros elementos */
+    margin-top: -27px;
+}
+
+
+/* Ajustes para los elementos de entrada en el área de reserva */
+.reserva input[type="text"],
+.reserva select,
+.reserva input[type="date"] {
+    width: 100%;
+    height: 47px;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+
+.placeholder-text {
+    position: absolute;
+    left: 1em;
+    top: 1.5em; /* Ajusta la posición vertical según sea necesario */
+    color: #6c757d; /* Color de texto gris similar al placeholder */
+    transition: top 0.2s, font-size 0.2s, color 0.2s;
+    pointer-events: none;
+}
+
+.custom-select {
+    border: 1px solid #ced4da; /* Color del borde predeterminado */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transición suave */
+}
+
+.custom-select:focus {
+    border-color: #80bdff; /* Color del borde cuando el elemento está enfocado */
+    outline: 0; /* Evitar la sombra del borde predeterminado */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Efecto de resaltado cuando el elemento está enfocado */
+}
+
+#nosotros{
+    margin-top: -80px;
+}
+
+
+
+
+
+
+/* INICIO ESTILOS NOSTROS */
+#nosotros .btn-primary {
+    background-color: #7AB730 !important;
+    border-color: #7AB730 !important;
+}
+#nosotros .about-text h6{
+    color: #7AB730 !important;
+}
+
+/* FIN ESTILOS NOSOTROS */
+
+
+
+
+
+
+
+
+/* INCIO ESTILOS BENEFICIOS  */
+#icono {
+    background-color: #7AB730 !important; /* Cambia el color de fondo */
+    margin-right:25px;
+}
+
+/* FIN ESTILOS BENEFICIOS */
+
+/* INICIO ESTILOS DESTINOS */
+/* Estilo para el contenedor de destino */
+.destination-item {
+    position: relative; /* Posición relativa para el posicionamiento del texto */
+}
+
+/* Estilo para la superposición de destino */
+#DESTINOS{
+    color: #7AB730 !important;
+
+}
+.destination-overlay {
+    position: absolute; /* Posición absoluta para superponer el texto */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear en la izquierda */
+    width: 100%; /* Ancho completo del contenedor padre */
+    height: 100%; /* Altura completa del contenedor padre */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro semi-transparente */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    text-align: center; /* Alinear el texto al centro */
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de columnas para el texto */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+/* Estilo para el texto dentro de la superposición */
+.destination-overlay h5,
+.destination-overlay span {
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+/* Estilo para mostrar la superposición al pasar el cursor */
+.destination-item:hover .destination-overlay {
+    opacity: 1; /* Mostrar la superposición con opacidad completa */
+}
+/* FIN ESTILOS DESTINOS */
+
+
+
+
+
+
+
+/* INICIO ESTILO SERVICIOS */
+
+#SERVICIOS .text-primary{
+    color: #7AB730 !important;
+}
+/* Establece el cuadro blanco con borde verde solo para los íconos */
+.service-item {
+    background-color: white; /* Fondo transparente */
+    border: none; /* Sin borde */
+   
+}
+
+.service-item .fa {
+    color: #7AB730; /* Color verde para el icono */
+    transition: color 0.3s; /* Transición suave para el cambio de color del icono */
+    transition: all 0.3s; /* Transición suave para el cambio de estilo */
+    background-color: #FFFFFF; /* Fondo blanco al pasar el cursor */
+    border: 2px solid #7AB730; /* Borde verde al pasar el cursor */
+    width: 100px;
+    height: 80px;
+    font-size: 4rem; /* Tamaño de la fuente del ícono */
+  
+}
+
+
+/* Cambia el estilo cuando se pasa el cursor sobre los contenedores */
+.service-item:hover .fa {
+    color: #FFFFFF; /* Color blanco para el icono al pasar el cursor */
+}
+/* FIN ESTILO SERVICIOS */
+
+
+
+
+
+
+/* INCIO ESTILO PAQUETES */
+/* Cambia el color de los iconos al verde deseado */
+.package-item .fa {
+    color: #7AB730;
+    margin-right: 10px;
+}
+
+/* Cambia el color del texto "Packages" al verde deseado */
+.text-primary {
+    color: #7AB730 !important;
+}
+
+.page-header {
+    background-image: url('../img/carousel-2.jpg'); /* Reemplaza 'ruta/de/tu/imagen.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Ajusta la posición para que el contenido esté encima de la imagen de fondo */
+    overflow: hidden; /* Evita que el contenido sobresalga del contenedor */
+}
+
+.page-header::before {
+    content: ''; /* Añade un pseudo-elemento antes del contenido */
+    position: absolute; /* Ajusta la posición absoluta */
+    top: 0; /* Posiciona desde la parte superior */
+    left: 0; /* Posiciona desde la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo negro con opacidad del 50% */
+    z-index: 1; /* Asegura que el pseudo-elemento esté debajo del contenido */
+}
+
+.page-header .container {
+    position: relative; /* Ajusta la posición para que el contenido esté encima del pseudo-elemento */
+    z-index: 2; /* Asegura que el contenido esté encima del pseudo-elemento */
+}
+
+/* FIN ESTILO PAQUETES */
+
+
+
+
+
+/* INICIO ESTILO EQUIPO */
+.team-item {
+    position: relative;
+}
+
+.team-item img {
+    transition: filter 0.3s;
+}
+
+.team-item:hover img {
+    filter: brightness(0.5); /* Reduce la saturación al 80% */
+}
+
+.team-social {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.team-item:hover .team-social {
+    opacity: 1;
+}
+/* FIN ESTILO EQUIPO */
+
+
+
+
+
+
+
+
+
+/* ESTILOS FOOTER */
+
+/* Estilos para el color del texto y los botones */
+h1 .text-primary,
+.footer-color .text-white-50,
+.footer-color .text-primary,
+.footer-color .btn-outline-primary {
+    color: #7AB730 !important; /* Color del texto y los botones */
+}
+
+/* Ajustes para los iconos de redes sociales */
+ .fab {
+    font-size: 24px; /* Tamaño de los iconos de redes sociales */
+    color: #7AB730 !important; /* Color del texto y los botones */
+
+}
+
+.btn-outline-primary{
+    border-color: #7AB730 !important; /* Color del texto y los botones */
+    margin-right: 5px;
+
+}
+
+/* Estilos para el h1 */
+.container-fluid.bg-dark .text-primary {
+    color: #7AB730 !important;
+}
+
+/* Estilos para el botón de registrarse */
+.container-fluid.bg-dark .btn-primary {
+    background-color: #7AB730 !important;
+    border-color: #7AB730 !important;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    margin-left: -15px;
+
+}
+/* FIN ESTILO FOOTER */
+
+
+
